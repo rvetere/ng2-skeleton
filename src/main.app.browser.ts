@@ -16,7 +16,7 @@ import './app/components/app/app.scss';
  * App Component
  * our top level component that holds all of our components
  */
-import {App, AppState} from './app/components/app';
+import {App, AppState} from './app/components/app/index';
 
 /*
  * Bootstrap our Angular app with a top level component `App` and inject

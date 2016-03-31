@@ -7,6 +7,7 @@ import {
 } from '../../commons/index';
 
 import {Home} from '../home/home.component';
+import {About} from '../about/about.component';
 import {AppState} from './app.service';
 
 let Tether = require('tether');
@@ -29,7 +30,7 @@ export const AppDecorator = {
 
    providers: [],
 
-   templateUrl: CommonsUtil.getTmplUrlPrefix() + '/components/app/app.html'
+   template: require('./app.html')
 };
 
 /*
@@ -43,13 +44,12 @@ export const AppDecorator = {
  */
 @RouteConfig([
    {path: '/', component: Home, name: 'Index'},
-   {path: '/:home', component: Home, name: 'Home'},
+   {path: '/home', component: Home, name: 'Home'},
+   {path: '/about', component: About, name: 'About'},
    {path: '/**', redirectTo: ['Index']}
 ])
 export class App {
-   public currentUser: Object;
-   public mode: string = 'display';
-   public name: string = 'mojito-impact root component';
+   public name: string = 'ng2-skeleton';
 
    /**
     * Don't worry that the constructor of the root component will be called twice on page load in dev mode. This is
@@ -65,8 +65,7 @@ export class App {
    }
 
    ngOnInit() {
-      // in local dev mode (basically just in mojito-impact) we can define a dummy user in window.currentUser where we bootstrap
-      this.currentUser = window.currentUser;
+
    }
 
 }

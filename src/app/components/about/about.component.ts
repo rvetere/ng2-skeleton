@@ -5,7 +5,7 @@ import {AppState} from '../app/app.service';
   // The selector is what angular internally uses
   // for `document.querySelectorAll(selector)` in our index.html
   // where, in this case, selector is the string 'home'
-  selector: 'home',  // <home></home>
+  selector: 'about',  // <home></home>
   // We need to tell Angular's Dependency Injection which providers are in our app.
   providers: [
   ],
@@ -16,9 +16,9 @@ import {AppState} from '../app/app.service';
   // We need to tell Angular's compiler which custom pipes are in our template.
   pipes: [ ],
   // Every Angular template is first compiled by the browser before Angular runs it's compiler
-  template: require('./home.html')
+  template: require('./about.html')
 })
-export class Home {
+export class About {
   // Set our default values
   localState = { value: '' };
   // TypeScript public modifiers
@@ -27,12 +27,10 @@ export class Home {
   }
 
   ngOnInit() {
-    console.log('hello `Home` component');
-    // this.title.getData().subscribe(data => this.data = data);
+
   }
 
   submitState(value) {
-    console.log('submitState', value);
     this.appState.set('value', value);
   }
 

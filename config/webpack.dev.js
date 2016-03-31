@@ -27,7 +27,7 @@ const METADATA = {
    title: 'mojito-impact',
    baseUrl: '/',
    host: process.env.HOST || 'localhost',
-   port: process.env.PORT || 2300,
+   port: process.env.PORT || 3000,
    ENV: ENV,
    HMR: HMR
 };
