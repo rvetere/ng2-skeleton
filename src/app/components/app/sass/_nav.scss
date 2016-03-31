@@ -1,0 +1,180 @@
+nav {
+    border-color: transparent;
+    border-right: 1px solid rgba(78, 90, 94, 0.2);
+    background-color: white;
+    position: fixed;
+    min-height: 100%;
+    width: 90px;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+}
+
+nav ul{
+	position: absolute;
+	z-index: 2000;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -400px; /* bei hover: left: 70px; */
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+nav li {
+	width: 100%;
+	text-align: left;
+	display: inline-block;
+	font-family: 'Oswald', sans-serif;
+}
+
+nav hr {
+	margin: 30px 0;
+	width: 90px;
+	text-align: center;
+	border-top: 1px solid rgba(197, 30, 71, 1);
+}
+
+nav li a {
+	font-weight: 700;
+	font-size: 4em;
+	letter-spacing: 3px;
+	line-height: 1.3em;
+	background-color: #3e3e3e;
+	background-image: -webkit-linear-gradient(left, #3e3e3e 0%, #3e3e3e 50%, transparent 50%);
+}
+
+nav li a:hover {
+	background-image: -webkit-linear-gradient(left, #c51e47 0%, #c51e47 50%, transparent 50%);
+}
+
+
+/* -------------- brand -------------- */
+.nav-header {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100px;
+	transition: background-color 0.8s ease;
+}
+
+.nav-header .nav-brand {
+	padding: 0;
+	margin: 55px 0 0 35px;
+	width: 328px;
+	color: #c51e47;
+	font-size: 3.6em;
+	font-weight: 400;
+	line-height: 1em;
+	overflow: hidden;
+	display: inline-block;
+	font-family: 'Amatic SC', cursive;
+	height: 60px;
+}
+
+.nav-header .nav-brand svg {
+	display: block;
+	width: 200px;
+	height: 58px;
+	transition: all .8s ease;
+}
+
+.nav-header .nav-brand span {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	cursor: pointer;
+	letter-spacing: 0;
+	-webkit-transition: all 0.2s 0s linear;
+	transition: all 0.2s 0s linear;
+}
+
+.nav-header .nav-brand span.fullname {
+	-webkit-transition: max-width 0.3s 0.2s cubic-bezier(0, 0, 0, 1);
+	transition: max-width 0.3s 0.2s cubic-bezier(0, 0, 0, 1);
+	display: inline-block;
+	max-width: 0;
+}
+
+.nav-header .nav-brand span.fullname i {
+	opacity: 0;
+	font-style: normal;
+	letter-spacing: 0;
+	transform: translate(0, -5px);
+}
+
+.nav-header .nav-brand:hover {
+	color: #c51e47;	
+}
+
+/* -------------- burger -------------- */
+#nav-toggle {
+	cursor: pointer;
+	position: absolute;
+	z-index: 3000;
+	height: 20px;
+	width: 100%;
+	float: left;
+	padding: 40px 54px 41px 35px;
+	bottom: 0;
+	border-top: 1px solid rgba(78,90,94,0.2);
+	background-color: rgba(0,0,0,0);
+}
+
+#nav-toggle:hover {
+	background-color: rgba(0,0,0,0.02);
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	cursor: pointer;
+	border-radius: 2px;
+	height: 2px;
+	width: 18px;
+	background: #4e5a5e;
+	position: absolute;
+	display: block;
+	content: '';
+}
+#nav-toggle:hover {
+	&:before {
+		border-color: #4e5a5e;
+	}
+}
+
+#nav-toggle:hover span,
+#nav-toggle:hover span:before,
+#nav-toggle:hover span:after {
+	background: #c51e47;
+}
+
+#nav-toggle span:before {
+	top: -6px;
+}
+
+#nav-toggle span:after {
+	bottom: -6px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	transition: all 500ms ease-in-out;
+}
+
+#nav-toggle.active span {
+	background-color: transparent;
+}
+
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+	top: 0;
+}
+
+#nav-toggle.active span:before {
+	transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+	transform: rotate(-45deg);
+}
+
+
+

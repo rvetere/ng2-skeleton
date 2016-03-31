@@ -1,0 +1,73 @@
+/* -------------- header -------------- */
+.work-header {
+    height: 100%;
+	width: 100%;
+	display: block;
+	margin: 0;
+}
+
+.work-header .col-md-12 {
+    height: 100%;
+	width: 100%;
+    background-size: cover;
+    background-position: 30% 50%;
+	display: block;
+	position: relative;
+}
+
+/* -------------- info -------------- */
+.work-info {
+	color: #fff;
+}
+
+.work-info p {
+    font-size: 2.5em;
+	line-height: 1.2em;
+	color: #fff;
+    margin: 0;
+	padding: 0 0 0 0;
+    letter-spacing: 1px;	
+	text-align: center;
+}
+
+/* -------------- about -------------- */
+
+
+/* -------------- facts -------------- */
+.work-facts {
+	color: #fff;
+	text-align: center;
+	margin: 0;
+}
+
+.work-facts .col-md-12 div p {
+	margin: 0;
+}
+
+.work-facts .col-md-12 div p span{
+	padding: 0 12px;
+	font-weight: 700;
+}
+
+.work-facts .col-md-12 hr {
+	border: none;
+	height: 1px;
+	clear: both;
+	background-color: rgba(255, 255, 255, 0.2);
+	margin: 6% 0;
+}
+
+/* -------------- pictures -------------- */
+.work-pictures {
+    margin: 0 auto 0px auto;
+}
+
+.work-pictures .col-md-6 img {
+    width: 100%;
+}
+
+.work-pictures .col-md-8 {
+    text-align: right;
+	padding: 0;
+	margin: 80px 0 0 0;
+}

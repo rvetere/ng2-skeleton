@@ -1,3 +1,122 @@
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body, html {
+	font-size: 1em;
+	padding: 0;
+	margin: 0;
+	font-family: $font-family-sans-serif;
+	font-weight: 300;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
 body {
-   font-family: $font-family-sans-serif;
+	color: #3e3e3e;
+	background-color: #fff;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+main {
+	margin: 0 0 0 90px;
+	height: 100%
+}
+
+a {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+	outline: none;
+    background-color: #fff;
+    background-image: -webkit-linear-gradient(left, #fff 0%, #fff 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+	color: transparent;
+    transition: .3s .1s ease-in-out;
+	 -webkit-background-clip: text;
+}
+
+a:hover {
+	background-position: 0 0;
+	background-image: -webkit-linear-gradient(left, #3e3e3e 0%, #3e3e3e 50%, transparent 50%);
+}
+
+h1 {
+    font-size: 6em;
+    padding: 0 0 0 0;
+	line-height: 1em;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	margin: 0 0 1em 0;	
+}
+
+h2 {
+	font-size: 1em;
+	text-transform: uppercase;
+	margin: 0 0 1em 0;
+	text-align: center;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 1em;
+}
+
+h3 {
+	font-size: 1em;
+	text-transform: uppercase;
+	margin: 1em 0 1em 0;
+	line-height: 1em;
+	font-weight: 600;
+}
+
+h4 {
+    font-size: 3em;
+    padding: 0 0 0 0;
+	line-height: 1.5em;
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+    margin: 0 0 1em 0;
+    letter-spacing: 1px;	
+	text-align: center;
+}
+
+p {
+	font-size: 1.2em;
+	margin: 0 0 2em 0;
+	line-height: 1.5em;
+	 -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+.row {
+    margin: 0 auto 12% auto;
+}
+
+/* -------------- colums -------------- */
+.col-md-12, .col-md-6 {
+    padding: 6% 12%;
+}
+
+.col-md-12.no-gap-top, .col-md-6.no-gap-top {
+    padding: 0 12%;
+}
+
+.col-md-12.no-gap-left, .col-md-6.no-gap-left {
+    padding: 6% 0;
+}
+
+.col-md-12.no-gap, .col-md-6.no-gap {
+    padding: 0 0;
 }

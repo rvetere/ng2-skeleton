@@ -7,6 +7,7 @@ import {
 } from '../../commons/index';
 
 import {Home} from '../home/home.component';
+import {Steakhouse} from '../steakhouse/steakhouse.component';
 import {About} from '../about/about.component';
 import {AppState} from './app.service';
 
@@ -43,10 +44,10 @@ export const AppDecorator = {
  * -> this way we can define a total dynamic navigation which is editable
  */
 @RouteConfig([
-   {path: '/', component: Home, name: 'Index'},
-   {path: '/home', component: Home, name: 'Home'},
+   {path: '/', component: Home, name: 'Home'},
+   {path: '/steakhouse', component: Steakhouse, name: 'Steakhouse'},
    {path: '/about', component: About, name: 'About'},
-   {path: '/**', redirectTo: ['Index']}
+   {path: '/**', redirectTo: ['Home']}
 ])
 export class App {
    public name: string = 'ng2-skeleton';

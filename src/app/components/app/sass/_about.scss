@@ -1,0 +1,94 @@
+/* -------------- info -------------- */
+.about-info {
+	margin: 0;
+}
+
+.about-info img {
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+	-webkit-transition: all .6s ease;
+	transition: all .6s ease;
+}
+
+.about-info img:hover {
+	-webkit-filter: none;
+    filter: none;
+}
+
+/* -------------- facts -------------- */
+.about-facts {
+    background-color: #c51e47;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+}
+
+.about-facts .col-md-12 div p {
+	margin: 0;
+}
+
+.about-facts .col-md-12 div p span{
+	padding: 0 12px;
+	font-weight: 700;
+}
+
+/* -------------- pictures -------------- */
+.about-pictures .col-md-3 {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.about-pictures img {
+	width: 100%;
+	-webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
+}
+
+.about-pictures img:hover {
+	-webkit-filter: none;
+    filter: none;
+	/*transform: scale(1.05, 1.05);
+	-moz-transform: scale(1.05, 1.05);
+	-webkit-transform: scale(1.05, 1.05);
+	-o-transform: scale(1.05, 1.05);
+	-ms-transform: scale(1.05, 1.05);*/
+}
+
+/* -------------- about -------------- */
+
+
+/* -------------- contact -------------- */
+.about-contact {
+	color: #fff;
+	background-color: #c51e47;
+}
+
+.about-contact .col-md-12 {
+    text-align: center;
+}
+
+.about-contact p {
+    margin: 0 0 0.5em 0;
+}
+
+.about-contact a {
+	background-color: #fff;
+	font-weight: 300;
+	padding: 8px 0 0 0;
+}
+
+.about-contact a:hover {
+    background-image: -webkit-linear-gradient(left, #333 0%, #333 50%, transparent 50%);
+}
+
+/* -------------- service -------------- */
+.about-service span {
+	color: #c51e47;
+	font-size: 1.5em;
+}
+
+
+/* -------------- clients -------------- */
