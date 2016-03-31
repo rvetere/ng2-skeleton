@@ -12,16 +12,6 @@ body, html {
 	font-weight: 300;
 }
 
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix:before, .clearfix:after {
-	content: " ";
-	display: table;
-}
-
-.clearfix:after {
-	clear: both;
-}
-
 body {
 	color: #3e3e3e;
 	background-color: #fff;
