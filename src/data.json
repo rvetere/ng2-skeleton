@@ -1,0 +1,141 @@
+{
+   "productId": 40,
+   "version": 1,
+   "header": {
+      "rows": [
+         {
+            "columns": [
+               {
+                  "width": "12",
+                  "widgets": [
+                     {
+                        "id": "99",
+                        "type": "navigation",
+                        "projectName": "default",
+                        "navigation": [
+                           {
+                              "id": "0",
+                              "navigate": "Index",
+                              "name": "index"
+                           },
+                           {
+                              "id": "1",
+                              "navigate": "home",
+                              "name": "home"
+                           },
+                           {
+                              "id": "2",
+                              "navigate": "about",
+                              "name": "about"
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   },
+   "pages": [
+      {
+         "id": "1",
+         "navigate": "home",
+         "rows": [
+            {
+               "columns": [
+                  {
+                     "width": "9",
+                     "widgets": [
+                        {
+                           "id": "1",
+                           "type": "jumbotron",
+                           "heading": "Jumbotron heading",
+                           "lead": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
+                           "button": "Sign up today",
+                           "buttonLink": "#"
+                        },
+                        {
+                           "id": "2",
+                           "type": "text",
+                           "content": "<h2>Text heading</h2><p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>"
+                        }
+                     ]
+                  },
+                  {
+                     "width": "3",
+                     "widgets": [
+                        {
+                           "id": "3",
+                           "type": "text",
+                           "content": "<h2>Text heading</h2><p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>"
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "id": "2",
+         "navigate": "about",
+         "rows": [
+            {
+               "columns": [
+                  {
+                     "width": "9",
+                     "widgets": [
+                        {
+                           "id": "4",
+                           "type": "text",
+                           "content": "<h2>Text heading</h2><p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>"
+                        }
+                     ]
+                  },
+                  {
+                     "width": "3",
+                     "widgets": [
+                        {
+                           "id": "5",
+                           "type": "text",
+                           "content": "<h2>Text heading</h2><p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>"
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "columns": [
+                  {
+                     "width": "12",
+                     "widgets": [
+                        {
+                           "id": "6",
+                           "type": "text",
+                           "content": "<h2>Text heading</h2><p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>"
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ],
+   "footer": {
+      "rows": [
+         {
+            "columns": [
+               {
+                  "width": "12",
+                  "widgets": [
+                     {
+                        "id": "7",
+                        "type": "text",
+                        "content": "<p>vistapage 2016</p>"
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   }
+}

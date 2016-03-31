@@ -1,0 +1,13 @@
+<div *ngIf="currentUser" class="container">
+   <header></header>
+
+   <outlet></outlet>
+
+   <footer></footer>
+</div>
+
+<div *ngIf="!currentUser" class="container">
+   <div class="alert alert-info text-lg-center">
+      <button class="btn btn-primary-outline" (click)="showLogin()">login</button>
+   </div>
+</div>

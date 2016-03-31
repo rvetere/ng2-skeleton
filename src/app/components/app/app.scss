@@ -1,0 +1,10 @@
+// set all variables of bootstrap to our own default
+@import './sass/_variables';
+
+// import bootstrap
+@import '../../../../node_modules/bootstrap/scss/bootstrap';
+
+// common stylings
+@import './sass/_basics';
+
+// directives
