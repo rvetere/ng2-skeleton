@@ -1,5 +1,5 @@
 import {Component, OnInit} from 'angular2/core';
-import {RouteConfig, Router, ROUTER_DIRECTIVES} from 'angular2/router';
+import {RouteConfig, Router, RouteParams, ROUTER_DIRECTIVES} from 'angular2/router';
 import {RouterActive} from '../../directives/router-active.directive';
 
 import {
@@ -30,7 +30,9 @@ export const AppDecorator = {
 
    viewProviders: [],
 
-   providers: [],
+   providers: [
+
+   ],
 
    template: require('./app.html')
 };
@@ -59,7 +61,8 @@ export class App {
     * caused by the hot-module-replace initialization which can't be turned off, but will be turned off in production
     * mode.
     */
-   constructor(public appState: AppState) {
+   constructor(public appState: AppState,
+               public router: Router) {
 
    }
 
@@ -69,6 +72,16 @@ export class App {
 
    ngOnInit() {
 
+   }
+
+   public onNavToggleClick(event: any): void {
+      event.preventDefault();
+      jQuery('#nav-toggle').toggleClass('active');
+      jQuery('body').toggleClass('nav-open');
+   }
+
+   public getStateCls(): string {
+      return this.router.currentInstruction ? this.router.currentInstruction.urlPath.replace('/', '') : '';
    }
 
 }

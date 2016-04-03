@@ -48,6 +48,12 @@ nav li a:hover {
 	background-image: -webkit-linear-gradient(left, #c51e47 0%, #c51e47 50%, transparent 50%);
 }
 
+.nav-open {
+   nav {
+      width: 360px;
+   }
+}
+
 
 /* -------------- brand -------------- */
 .nav-header {
@@ -106,7 +112,7 @@ nav li a:hover {
 }
 
 .nav-header .nav-brand:hover {
-	color: #c51e47;	
+	color: #c51e47;
 }
 
 /* -------------- burger -------------- */

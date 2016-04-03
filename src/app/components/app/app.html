@@ -1,37 +1,39 @@
-<header>
-    <nav>
-        <div class="nav-header">
-            <a id="nav-toggle" href="#"><span></span></a>
+<div class="wrapper {{ getStateCls() }}">
+   <header>
+      <nav class="navbar-fixed-top">
+         <div class="nav-header">
+            <a id="nav-toggle" href="#" (click)="onNavToggleClick($event)"><span></span></a>
             <a class="nav-brand" [routerLink]=" ['Home'] " alt="sybille-hausherr.ch"><span>S<span class="fullname"><i>y</i><i>b</i><i>i</i><i>l</i><i>l</i><i>e</i></span>.</span></a>
-        </div>
-        <ul>
+         </div>
+         <ul>
             <li router-active><a [routerLink]=" ['Home'] ">hello</a></li>
             <!--<li router-active><a [routerLink]=" ['Work'] ">work</a></li>
             <li router-active><a [routerLink]=" ['Stuff'] ">stuff</a></li>-->
             <li router-active><a [routerLink]=" ['About'] ">about</a></li>
-        </ul>
-    </nav>
-</header>
+         </ul>
+      </nav>
+   </header>
 
-<main>
-	<router-outlet></router-outlet>
-</main>
+   <main>
+      <router-outlet></router-outlet>
+   </main>
 
-<footer class="clearfix">
-    <div class="col-md-12">
-        <div class="col-md-12 no-gap">
+   <footer class="clearfix">
+      <div class="col-md-12">
+         <div class="col-md-12 no-gap">
             <h4>I'm available for freelancing<br>get in touch!</h4>
-        </div>
-        <div class="col-md-12 no-gap">
+         </div>
+         <div class="col-md-12 no-gap">
             <p><a href="mailto:hello@sybille-hausherr.ch">hello@sybille-hausherr.ch</a></p>
             <p>
-            <a href="https://ch.linkedin.com/in/sybille-hausherr-00307a81" target="_blank" alt="linkedin" class="icn-linkedin"></a>
-            <a href="https://twitter.com/SybilleHausherr" target="_blank" alt="twitter" class="icn-twitter"></a>
-            <a href="https://www.facebook.com/SybilleHausherr/" target="_blank" alt="facebook" class="icn-facebook"></a>
-        </p>
-        </div>
-        <!--<div class="col-md-12 no-gap">
-            <p><a href="https://www.google.ch/maps/place/Illnau-Effretikon/@47.4276027,8.6778257,13z/data=!3m1!4b1!4m2!3m1!1s0x479aa28473159713:0xf9c326d9219e2e72" target="_blank">Illnau, Switzerland</a></p>
-        </div>-->
-    </div>
-</footer>
+               <a href="https://ch.linkedin.com/in/sybille-hausherr-00307a81" target="_blank" alt="linkedin" class="icn-linkedin"></a>
+               <a href="https://twitter.com/SybilleHausherr" target="_blank" alt="twitter" class="icn-twitter"></a>
+               <a href="https://www.facebook.com/SybilleHausherr/" target="_blank" alt="facebook" class="icn-facebook"></a>
+            </p>
+         </div>
+         <!--<div class="col-md-12 no-gap">
+             <p><a href="https://www.google.ch/maps/place/Illnau-Effretikon/@47.4276027,8.6778257,13z/data=!3m1!4b1!4m2!3m1!1s0x479aa28473159713:0xf9c326d9219e2e72" target="_blank">Illnau, Switzerland</a></p>
+         </div>-->
+      </div>
+   </footer>
+</div>
