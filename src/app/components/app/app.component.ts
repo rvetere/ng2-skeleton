@@ -8,6 +8,7 @@ import {
 
 import {Home} from '../home/home.component';
 import {Steakhouse} from '../steakhouse/steakhouse.component';
+import {Bayer} from '../bayer/bayer.component';
 import {About} from '../about/about.component';
 import {AppState} from './app.service';
 
@@ -46,6 +47,7 @@ export const AppDecorator = {
 @RouteConfig([
    {path: '/', component: Home, name: 'Home'},
    {path: '/steakhouse', component: Steakhouse, name: 'Steakhouse'},
+   {path: '/bayer', component: Bayer, name: 'Bayer'},
    {path: '/about', component: About, name: 'About'},
    {path: '/**', redirectTo: ['Home']}
 ])

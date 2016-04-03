@@ -4,15 +4,29 @@ footer {
 }
 
 /* -------------- steakhouse -------------- */
-.work-info {
+steakhouse .work-info {
     background-color: #952022;
 }
 
-.work-about a {
+steakhouse .work-about a {
 	background-color: #952022;
 	background-image: -webkit-linear-gradient(left, #952022 0%, #952022 50%, transparent 50%);
 }
 
-.work-facts {
+steakhouse .work-facts {
     background-color: #952022;
+}
+
+/* -------------- bayer -------------- */
+bayer .work-info {
+    background-color: #1898ce;
+}
+
+bayer .work-about a {
+	background-color: #1898ce;
+	background-image: -webkit-linear-gradient(left, #1898ce 0%, #1898ce 50%, transparent 50%);
+}
+
+bayer .work-facts {
+    background-color: #1898ce;
 }
