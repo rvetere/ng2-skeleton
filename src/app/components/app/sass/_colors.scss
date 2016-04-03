@@ -4,29 +4,59 @@ footer {
 }
 
 /* -------------- steakhouse -------------- */
-steakhouse .work-info {
+.steakhouse .nav-header .nav-brand {
+	color: #ad2325;
+}
+
+.steakhouse nav li a:hover {
+	background-image: -webkit-linear-gradient(left, #ad2325 0%, #ad2325 50%, transparent 50%);
+}
+
+.steakhouse #nav-toggle:hover span, .steakhouse #nav-toggle:hover span:before, .steakhouse #nav-toggle:hover span:after {
+	background: #ad2325;
+}
+
+.steakhouse .work-info {
     background-color: #952022;
 }
 
-steakhouse .work-about a {
+.steakhouse .work-about a {
 	background-color: #952022;
-	background-image: -webkit-linear-gradient(left, #952022 0%, #952022 50%, transparent 50%);
 }
 
-steakhouse .work-facts {
+.steakhouse .work-facts {
+    background-color: #952022;
+}
+
+.steakhouse footer {
     background-color: #952022;
 }
 
 /* -------------- bayer -------------- */
-bayer .work-info {
-    background-color: #1898ce;
+.bayer .nav-header .nav-brand {
+	color: #1898ce;
 }
 
-bayer .work-about a {
-	background-color: #1898ce;
+.bayer  nav li a:hover {
 	background-image: -webkit-linear-gradient(left, #1898ce 0%, #1898ce 50%, transparent 50%);
 }
 
-bayer .work-facts {
+.bayer #nav-toggle:hover span, .bayer #nav-toggle:hover span:before, .bayer #nav-toggle:hover span:after {
+	background: #1898ce;
+}
+
+.bayer .work-info {
+    background-color: #1898ce;
+}
+
+.bayer .work-about a {
+	background-color: #1898ce;
+}
+
+.bayer .work-facts {
+    background-color: #1898ce;
+}
+
+.bayer footer {
     background-color: #1898ce;
 }

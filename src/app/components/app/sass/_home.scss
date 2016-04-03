@@ -55,8 +55,6 @@
 	display: block;
 	background-size: cover;
 	background-position: 50% -20px;
-    -webkit-transition: all 6s ease;
-    transition: all 6s ease;
 }
 
 .home-recentwork div.no-gap.col-md-12 {
@@ -69,10 +67,34 @@
 	background-position: 50% 45%;
 }
 
-.home-recentwork div.no-gap div:hover {
-	transform: scale(1.1, 1.1);
-	-moz-transform: scale(1.1, 1.1);
-	-webkit-transform: scale(1.1, 1.1);
-	-o-transform: scale(1.1, 1.1);
-	-ms-transform: scale(1.1, 1.1);
+.home-recentwork div.no-gap div.hover-titel {
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	font-size: 3em;
+    padding: 129px 0 0 48px;
+	line-height: 1.2em;
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+    margin: 0 0 1em 0;
+    letter-spacing: 1px;	
+	position: absolute;
+	-webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+	left: -100%;
+	top: 0;
+}
+
+.home-recentwork div.no-gap div.hover-titel span {
+	font-size: 0.5em;
+}
+
+.home-recentwork div.col-md-12.no-gap div.hover-titel {
+    padding: 378px 0 0 48px;
+}
+
+.home-recentwork div.no-gap:hover div.hover-titel {
+	opacity: 1;
+	left: 0;
 }

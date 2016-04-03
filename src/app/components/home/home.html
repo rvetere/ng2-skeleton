@@ -20,9 +20,18 @@
     <div class="col-md-12 no-gap-top">
         <h1><!--recent -->work.</h1>
     </div>
-    <div class="col-md-12 no-gap"><div style="background-image: url(../../../assets/img/steakhouse/steakhouse-header.jpg);"></div></div>
-    <div class="col-md-6 no-gap" style="border-right: 1px solid rgba(78, 90, 94, 0.2);"><div style="background-image: url(../../../assets/img/steakhouse/steakhouse-header.jpg);"></div></div>
-    <div class="col-md-6 no-gap"><div style="background-image: url(../../../assets/img/bayer/bayer-header.jpg);"></div></div>
+    <div class="col-md-12 no-gap">
+    	<a [routerLink]=" ['Home'] "><div class="hover-titel"><span>App</span><br>Steakhouse Frieden Illnau</div></a>
+        <div style="background-image: url(../../../assets/img/steakhouse/steakhouse-header.jpg);"></div>
+    </div>
+    <div class="col-md-6 no-gap" style="border-right: 1px solid rgba(78, 90, 94, 0.2);">
+    	<a [routerLink]=" ['Steakhouse'] "><div class="hover-titel"><span>Webseite</span><br>Steakhouse Frieden Illnau</div></a>
+        <div style="background-image: url(../../../assets/img/steakhouse/steakhouse-header.jpg);"></div>
+    </div>
+    <div class="col-md-6 no-gap">
+        <a [routerLink]=" ['Bayer'] "><div class="hover-titel"><span>Webseite</span><br>Bayer Diabetes</div></a>
+        <div style="background-image: url(../../../assets/img/bayer/bayer-header.jpg);"></div>
+    </div>
 </div>
 
 <!-- SERVICE -->

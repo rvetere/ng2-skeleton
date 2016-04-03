@@ -5,20 +5,22 @@ nav {
     position: fixed;
     min-height: 100%;
     width: 90px;
-    -webkit-transition: width 1s;
+	-webkit-transition: width 1s;
     transition: width 1s;
 }
 
-nav ul{
+nav ul {
 	position: absolute;
 	z-index: 2000;
 	top: 50%;
 	transform: translateY(-50%);
-	left: -400px; /* bei hover: left: 70px; */
+	left: -400px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	-webkit-transition: left 1s;
+    transition: left 1s;
 }
 
 nav li {
@@ -48,12 +50,6 @@ nav li a:hover {
 	background-image: -webkit-linear-gradient(left, #c51e47 0%, #c51e47 50%, transparent 50%);
 }
 
-.nav-open {
-   nav {
-      width: 360px;
-   }
-}
-
 
 /* -------------- brand -------------- */
 .nav-header {
@@ -75,7 +71,6 @@ nav li a:hover {
 	overflow: hidden;
 	display: inline-block;
 	font-family: "ff-market-web", sans-serif;
-	/*font-family: "kremlin-pro-web", sans-serif;*/
 	height: 60px;
 }
 
@@ -112,7 +107,32 @@ nav li a:hover {
 }
 
 .nav-header .nav-brand:hover {
-	color: #c51e47;
+	opacity: 0.8;
+}
+
+.nav-header .nav-brand span.fullname i:nth-of-type(6) {
+	-webkit-transition: all 0.2s 0.05s linear;
+	transition: all 0.2s 0.05s linear;
+}
+.nav-header .nav-brand span.fullname i:nth-of-type(5) {
+	-webkit-transition: all 0.2s 0.1s linear;
+	transition: all 0.2s 0.1s linear;
+}
+.nav-header .nav-brand span.fullname i:nth-of-type(4) {
+	-webkit-transition: all 0.2s 0.15s linear;
+	transition: all 0.2s 0.15s linear;
+}
+.nav-header .nav-brand span.fullname i:nth-of-type(3) {
+	-webkit-transition: all 0.2s 0.2s linear;
+	transition: all 0.2s 0.2s linear;
+}
+.nav-header .nav-brand span.fullname i:nth-of-type(2) {
+	-webkit-transition: all 0.2s 0.25s linear;
+	transition: all 0.2s 0.25s linear;
+}
+.nav-header .nav-brand span.fullname i:nth-of-type(1) {
+	-webkit-transition: all 0.2s 0.3s linear;
+	transition: all 0.2s 0.3s linear;
 }
 
 /* -------------- burger -------------- */
@@ -168,7 +188,7 @@ nav li a:hover {
 }
 
 #nav-toggle.active span {
-	background-color: transparent;
+	background-color: transparent !important;
 }
 
 #nav-toggle.active span:before, #nav-toggle.active span:after {
@@ -181,6 +201,48 @@ nav li a:hover {
 
 #nav-toggle.active span:after {
 	transform: rotate(-45deg);
+}
+
+/* -------------- open nav -------------- */
+.nav-open nav {
+  width: 360px;
+}
+
+.nav-open nav ul{
+	left: 80px;
+}
+
+.nav-open .nav-header .nav-brand span.fullname i:nth-of-type(1) {
+	-webkit-transition: all 0.2s 0.05s linear;
+	transition: all 0.2s 0.05s linear;
+}
+.nav-open .nav-header .nav-brand span.fullname i:nth-of-type(2) {
+	-webkit-transition: all 0.2s 0.1s linear;
+	transition: all 0.2s 0.1s linear;
+}
+.nav-open .nav-header .nav-brand span.fullname i:nth-of-type(3) {
+	-webkit-transition: all 0.2s 0.15s linear;
+	transition: all 0.2s 0.15s linear;
+}
+.nav-open .nav-header .nav-brand span.fullname i:nth-of-type(4) {
+	-webkit-transition: all 0.2s 0.2s linear;
+	transition: all 0.2s 0.2s linear;
+}
+.nav-open .nav-header .nav-brand span.fullname i:nth-of-type(5) {
+	-webkit-transition: all 0.2s 0.25s linear;
+	transition: all 0.2s 0.25s linear;
+}
+.nav-open .nav-header .nav-brand span.fullname i:nth-of-type(6) {
+	-webkit-transition: all 0.2s 0.3s linear;
+	transition: all 0.2s 0.3s linear;
+}
+
+.nav-open .nav-header .nav-brand span.fullname {
+	max-width: 100px;
+}
+
+.nav-open .nav-header .nav-brand span.fullname i{
+	opacity: 1;
 }
 
 
