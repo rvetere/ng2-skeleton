@@ -3,6 +3,35 @@ footer {
     background-color: #c51e47;
 }
 
+/* -------------- service -------------- */
+.service .nav-header .nav-brand {
+	color: #0379b5;
+}
+
+.service nav li a:hover {
+	background-image: -webkit-linear-gradient(left, #0379b5 0%, #0379b5 50%, transparent 50%);
+}
+
+.service #nav-toggle:hover span, .service #nav-toggle:hover span:before, .service #nav-toggle:hover span:after {
+	background: #0379b5;
+}
+
+.service .work-info {
+    background-color: #0379b5;
+}
+
+.service .work-about a {
+	background-color: #0379b5;
+}
+
+.service .work-facts {
+    background-color: #0379b5;
+}
+
+.service footer {
+    background-color: #0379b5;
+}
+
 /* -------------- steakhouse -------------- */
 .steakhouse .nav-header .nav-brand {
 	color: #ad2325;

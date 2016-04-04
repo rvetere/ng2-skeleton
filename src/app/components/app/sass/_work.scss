@@ -1,20 +1,3 @@
-/* -------------- header -------------- */
-.work-header {
-    height: 100%;
-	width: 100%;
-	display: block;
-	margin: 0;
-}
-
-.work-header .col-md-12 {
-    height: 100vh;
-	width: 100%;
-    background-size: cover;
-    background-position: 50% 50%;
-	display: block;
-	position: relative;
-}
-
 /* -------------- info -------------- */
 .work-info {
 	color: #fff;
@@ -30,13 +13,11 @@
 	text-align: center;
 }
 
+/* -------------- about -------------- */
 .steakhouse .work-about a:hover {
 	background-color: #3e3e3e;
 	background-image: -webkit-linear-gradient(left, #3e3e3e 0%, #3e3e3e 50%, transparent 50%);
 }
-
-/* -------------- about -------------- */
-
 
 /* -------------- facts -------------- */
 .work-facts {

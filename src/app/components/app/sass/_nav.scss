@@ -63,7 +63,7 @@ nav li a:hover {
 .nav-header .nav-brand {
 	padding: 0;
 	margin: 55px 0 0 28px;
-	width: 328px;
+	width: 61px;
 	color: #c51e47;
 	font-size: 3.6em;
 	font-weight: 400;
@@ -210,6 +210,10 @@ nav li a:hover {
 
 .nav-open nav ul{
 	left: 80px;
+}
+
+.nav-open .nav-header .nav-brand {
+	width: 328px;
 }
 
 .nav-open .nav-header .nav-brand span.fullname i:nth-of-type(1) {

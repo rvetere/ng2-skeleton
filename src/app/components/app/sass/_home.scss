@@ -1,3 +1,11 @@
+/* -------------- home -------------- */
+.home {
+    height: 100vh;
+	width: 100%;
+	display: block;
+	margin: 0 auto 12% auto;
+}
+
 /* -------------- header -------------- */
 .home-header {
     height: 100%;
@@ -10,7 +18,7 @@
     height: 100vh;
 	width: 100%;
     background-size: cover;
-    background-position: 30% 50%;
+    background-position: 50% -70px;
 	display: block;
 	position: relative;
 }
@@ -18,7 +26,13 @@
 /* -------------- info -------------- */
 .home-info {
 	color: #fff;
-	background-color: #c51e47;
+    background-color: #c51e47;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+	padding: 6% 90px;
+	width: 100%
 }
 
 .home-info .col-md-12 {
@@ -97,4 +111,9 @@
 .home-recentwork div.no-gap:hover div.hover-titel {
 	opacity: 1;
 	left: 0;
+}
+
+/* -------------- clients -------------- */
+.home-clients {
+
 }
