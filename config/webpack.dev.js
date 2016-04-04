@@ -187,7 +187,25 @@ module.exports = {
          // Returns file content as string
          //
          // See: https://github.com/webpack/raw-loader
-         {test: /\.html$/, loader: 'raw-loader', exclude: [helpers.root('src/index.html')]}
+         {test: /\.html$/, loader: 'raw-loader', exclude: [helpers.root('src/index.html')]},
+
+         // Raw loader support for image files
+         // Returns file content as string
+         //
+         // See: https://github.com/webpack/raw-loader
+         {
+            test: /\.(png|jpg|jpeg|gif)/,
+            loader: 'raw-loader'
+         },
+
+         // Raw loader support for font files
+         // Returns file content as string
+         //
+         // See: https://github.com/webpack/raw-loader
+         {
+            test: /\.(ttf|wof|otf|eot)/,
+            loader: 'raw-loader'
+         }
 
       ]
 
