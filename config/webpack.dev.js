@@ -203,7 +203,7 @@ module.exports = {
          //
          // See: https://github.com/webpack/raw-loader
          {
-            test: /\.(ttf|wof|otf|eot)/,
+            test: /\.(ttf|wof|otf|eot|svg)/,
             loader: 'raw-loader'
          }
 
