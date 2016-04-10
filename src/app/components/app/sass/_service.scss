@@ -15,10 +15,78 @@
 }
 
 /* -------------- service -------------- */
-.about-service span {
+.service-service span {
 	color: #0379b5;
 	font-size: 1.5em;
 }
 
 
-/* -------------- clients -------------- */
+/* -------------- pictures -------------- */
+.service-pictures .col-md-3 {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.service-pictures div {
+	overflow: hidden;
+	height: 300px;
+}
+
+.service-pictures div div {
+	height: 300px;
+	display: block;
+	background-size: cover;
+	background-position: 60% 50%;
+	-webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+	-webkit-transition: transform 6s ease;
+    transition: transform 6s ease;
+}
+
+.service-pictures div div:hover {
+	-webkit-filter: none;
+    filter: none;
+	transform: scale(1.1, 1.1);
+	-moz-transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);
+	-ms-transform: scale(1.1, 1.1);
+}
+
+
+/* -------------- contact -------------- */
+.service-contact {
+	color: #fff;
+	background-color: #c51e47;
+}
+
+.service-contact .col-md-12 {
+    text-align: center;
+}
+
+.service-contact h4 {
+    margin: 0;
+}
+
+.service-contact p {
+    margin: 0 0 0.5em 0;
+}
+
+.service-contact a {
+	background-color: #fff;
+	font-weight: 300;
+	padding: 8px 0 0 0;
+}
+
+.service-contact a:hover {
+    background-image: -webkit-linear-gradient(left, #333 0%, #333 50%, transparent 50%);
+}
+
+/* -------------- service -------------- */
+.service-service span {
+	color: #c51e47;
+	font-size: 1.5em;
+}

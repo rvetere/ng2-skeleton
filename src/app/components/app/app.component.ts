@@ -10,6 +10,8 @@ import {Home} from '../home/home.component';
 import {Steakhouse} from '../steakhouse/steakhouse.component';
 import {Bayer} from '../bayer/bayer.component';
 import {About} from '../about/about.component';
+import {Elefant} from '../elefant/elefant.component';
+import {Work} from '../work/work.component';
 import {Service} from '../service/service.component';
 import {AppState} from './app.service';
 
@@ -53,6 +55,8 @@ export const AppDecorator = {
    {path: '/bayer', component: Bayer, name: 'Bayer'},
    {path: '/service', component: Service, name: 'Service'},
    {path: '/about', component: About, name: 'About'},
+   {path: '/elefant', component: Elefant, name: 'Elefant'},
+   {path: '/work', component: Work, name: 'Work'},
    {path: '/**', redirectTo: ['Home']}
 ])
 export class App {

@@ -60,57 +60,50 @@
 /* -------------- recent work -------------- */
 .home-recentwork div.no-gap {
 	overflow: hidden;
-	height: 300px;
-	border-bottom: 1px solid rgba(78, 90, 94, 0.2);
+	height: 400px;
+	border: 1px solid rgba(78, 90, 94, 0.2);
+	margin: 0 0 6% 0;
 }
 
 .home-recentwork div.no-gap div {
 	height: 400px;
 	display: block;
 	background-size: cover;
-	background-position: 50% -20px;
+	background-position: 50% 58%;
 }
 
-.home-recentwork div.no-gap.col-md-12 {
-	border-top: 1px solid rgba(78, 90, 94, 0.2);
-	height: 550px;
-}
-
-.home-recentwork div.no-gap.col-md-12 div {
-	height: 550px;
-	background-position: 50% 45%;
-}
-
-.home-recentwork div.no-gap div.hover-titel {
+.home-recentwork div.no-gap a {
 	width: 100%;
-	height: 100%;
-	opacity: 0;
-	background-color: rgba(0, 0, 0, 0.6);
-	font-size: 3em;
-    padding: 129px 0 0 48px;
-	line-height: 1.2em;
-	font-family: 'Oswald', sans-serif;
-	color: #fff;
+    height: 100%;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 3em;
+    padding: 120px 12% 0;
+    line-height: 1.2em;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
     margin: 0 0 1em 0;
-    letter-spacing: 1px;	
-	position: absolute;
-	-webkit-transition: all 0.6s ease;
+    letter-spacing: 1px;
+    position: absolute;
     transition: all 0.6s ease;
-	left: -100%;
-	top: 0;
+    left: -100%;
+    top: 0;
+    text-align: center;
+	display: block;
+	 -webkit-background-clip: border-box;
 }
 
-.home-recentwork div.no-gap div.hover-titel span {
-	font-size: 0.5em;
+.home-recentwork div.no-gap a span {
+	font-size: 0.4em;
 }
 
-.home-recentwork div.col-md-12.no-gap div.hover-titel {
-    padding: 378px 0 0 48px;
-}
-
-.home-recentwork div.no-gap:hover div.hover-titel {
+.home-recentwork div.no-gap:hover a {
 	opacity: 1;
 	left: 0;
+}
+
+.home-recentwork div.no-gap a:hover {
+	background-image: none;
 }
 
 /* -------------- clients -------------- */

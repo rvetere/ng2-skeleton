@@ -8,7 +8,7 @@ footer {
 	color: #0379b5;
 }
 
-.service nav li a:hover {
+.service nav li a {
 	background-image: -webkit-linear-gradient(left, #0379b5 0%, #0379b5 50%, transparent 50%);
 }
 
@@ -16,19 +16,7 @@ footer {
 	background: #0379b5;
 }
 
-.service .work-info {
-    background-color: #0379b5;
-}
-
-.service .work-about a {
-	background-color: #0379b5;
-}
-
-.service .work-facts {
-    background-color: #0379b5;
-}
-
-.service footer {
+.service .work-info, .service .work-about a, .service .work-facts, .service footer {
     background-color: #0379b5;
 }
 
@@ -37,7 +25,7 @@ footer {
 	color: #ad2325;
 }
 
-.steakhouse nav li a:hover {
+.steakhouse nav li a {
 	background-image: -webkit-linear-gradient(left, #ad2325 0%, #ad2325 50%, transparent 50%);
 }
 
@@ -45,28 +33,17 @@ footer {
 	background: #ad2325;
 }
 
-.steakhouse .work-info {
+.steakhouse .work-info, .steakhouse .work-about a, .steakhouse .work-facts, .steakhouse footer {
     background-color: #952022;
 }
 
-.steakhouse .work-about a {
-	background-color: #952022;
-}
-
-.steakhouse .work-facts {
-    background-color: #952022;
-}
-
-.steakhouse footer {
-    background-color: #952022;
-}
 
 /* -------------- bayer -------------- */
 .bayer .nav-header .nav-brand {
 	color: #1898ce;
 }
 
-.bayer  nav li a:hover {
+.bayer  nav li a {
 	background-image: -webkit-linear-gradient(left, #1898ce 0%, #1898ce 50%, transparent 50%);
 }
 
@@ -74,18 +51,23 @@ footer {
 	background: #1898ce;
 }
 
-.bayer .work-info {
+.bayer .work-info, .bayer .work-about a, .bayer .work-facts, .bayer footer {
     background-color: #1898ce;
 }
 
-.bayer .work-about a {
-	background-color: #1898ce;
+/* -------------- elefant -------------- */
+.elefant .nav-header .nav-brand {
+	color: #f57b04;
 }
 
-.bayer .work-facts {
-    background-color: #1898ce;
+.elefant  nav li a {
+	background-image: -webkit-linear-gradient(left, #f57b04 0%, #f57b04 50%, transparent 50%);
 }
 
-.bayer footer {
-    background-color: #1898ce;
+.elefant #nav-toggle:hover span, .elefant #nav-toggle:hover span:before, .elefant #nav-toggle:hover span:after {
+	background: #f57b04;
+}
+
+.elefant .work-info, .elefant .work-about a, .elefant .work-facts, .elefant footer {
+    background-color: #f57b04;
 }
