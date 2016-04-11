@@ -120,3 +120,15 @@
 .work-recentwork div.no-gap a:hover {
 	background-image: none;
 }
+
+
+/* -------------- others -------------- */
+.work-others div img {
+	width: 100%;
+	display: block;
+}
+
+.work-others div a {
+    background-color: #0379b5;
+	background-image: -webkit-linear-gradient(left, #3e3e3e 0%, #3e3e3e 50%, transparent 50%);
+}

@@ -20,6 +20,24 @@ footer {
     background-color: #0379b5;
 }
 
+/* -------------- work -------------- */
+.work .nav-header .nav-brand {
+	color: #0379b5;
+}
+
+.work nav li a {
+	background-image: -webkit-linear-gradient(left, #0379b5 0%, #0379b5 50%, transparent 50%);
+}
+
+.work #nav-toggle:hover span, .work #nav-toggle:hover span:before, .work #nav-toggle:hover span:after {
+	background: #0379b5;
+}
+
+.work .work-info, .work .work-about a, .work .work-facts, .work footer {
+    background-color: #0379b5;
+}
+
+
 /* -------------- steakhouse -------------- */
 .steakhouse .nav-header .nav-brand {
 	color: #ad2325;
