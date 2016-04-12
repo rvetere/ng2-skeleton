@@ -69,7 +69,16 @@ export class App {
     */
    constructor(public appState: AppState,
                public router: Router) {
+      router.subscribe(path => {
+         jQuery('body').removeClass('nav-open');
+         jQuery('#nav-toggle').removeClass('active');
 
+         setTimeout(function() {
+            jQuery('html, body').animate({
+               scrollTop: 0
+            }, 1000);
+         }, 150);
+      });
    }
 
    get state() {

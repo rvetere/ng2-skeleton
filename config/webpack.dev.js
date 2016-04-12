@@ -202,10 +202,7 @@ module.exports = {
          // Returns file content as string
          //
          // See: https://github.com/webpack/raw-loader
-         {
-            test: /\.(ttf|wof|otf|eot|svg)/,
-            loader: 'raw-loader'
-         }
+         { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' }
 
       ]
 
