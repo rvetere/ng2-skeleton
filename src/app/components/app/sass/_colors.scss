@@ -1,3 +1,6 @@
+$brand-service:             #0379b5;
+$brand-work:            	#0379b5;
+
 /* -------------- footer -------------- */
 footer {
     background-color: #c51e47;
@@ -5,36 +8,36 @@ footer {
 
 /* -------------- service -------------- */
 .service .nav-header .nav-brand {
-	color: #0379b5;
+	color: $brand-service;
 }
 
 .service nav li a {
-	background-image: -webkit-linear-gradient(left, #0379b5 0%, #0379b5 50%, transparent 50%);
+	background-image: -webkit-linear-gradient(left, $brand-service 0%, $brand-service 50%, transparent 50%);
 }
 
 .service #nav-toggle:hover span, .service #nav-toggle:hover span:before, .service #nav-toggle:hover span:after {
-	background: #0379b5;
+	background: $brand-service;
 }
 
 .service .work-info, .service .work-about a, .service .work-facts, .service footer {
-    background-color: #0379b5;
+    background-color: $brand-service;
 }
 
 /* -------------- work -------------- */
 .work .nav-header .nav-brand {
-	color: #0379b5;
+	color: $brand-work;
 }
 
 .work nav li a {
-	background-image: -webkit-linear-gradient(left, #0379b5 0%, #0379b5 50%, transparent 50%);
+	background-image: -webkit-linear-gradient(left, $brand-work 0%, $brand-work 50%, transparent 50%);
 }
 
 .work #nav-toggle:hover span, .work #nav-toggle:hover span:before, .work #nav-toggle:hover span:after {
-	background: #0379b5;
+	background: $brand-work;
 }
 
 .work .work-info, .work .work-about a, .work .work-facts, .work footer {
-    background-color: #0379b5;
+    background-color: $brand-work;
 }
 
 
