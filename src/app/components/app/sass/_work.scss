@@ -18,6 +18,15 @@
 	background-image: -webkit-linear-gradient(left, #3e3e3e 0%, #3e3e3e 50%, transparent 50%);
 }
 
+.work-about i {	
+    font-size: 2.4em;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    position: absolute;
+	top: -25px;
+	left: 0;
+}
+
 /* -------------- facts -------------- */
 .work-facts {
 	color: #fff;

@@ -7,6 +7,11 @@ footer {
 footer p {
 	text-align: center;
 	margin: 0 0 0.8em 0 !important;
+	color: #fff;
+}
+
+footer p.icons {
+	margin: 36px 0 0.8em 0 !important;
 }
 
 footer a {
@@ -14,6 +19,10 @@ footer a {
 	font-weight: 300;
 	padding: 0 12px 0 12px;
 	background-image: -webkit-linear-gradient(left, #a0a0a0 0%, #a0a0a0 50%, transparent 50%);
+}
+
+footer .icons a {
+	font-size: 1.4em;
 }
 
 footer span {
