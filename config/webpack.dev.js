@@ -24,7 +24,7 @@ var autoprefixer = require('autoprefixer');
 const ENV = process.env.ENV = process.env.NODE_ENV = 'development';
 const HMR = helpers.hasProcessFlag('hot');
 const METADATA = {
-   title: 'mojito-impact',
+   title: 'sybille-hausherr.ch',
    baseUrl: '/',
    host: process.env.HOST || 'localhost',
    port: process.env.PORT || 3000,

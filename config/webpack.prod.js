@@ -33,7 +33,7 @@ const ENV = process.env.NODE_ENV = process.env.ENV = 'production';
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 8080;
 const METADATA = {
-   title: 'mojito-impact',
+   title: 'Sybille Hausherr',
    baseUrl: '',
    host: HOST,
    port: PORT,

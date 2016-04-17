@@ -10,7 +10,7 @@ import {enableProdMode} from 'angular2/core';
 // Environment Providers
 var PROVIDERS = [];
 
-if ('production' === process.env.ENV) {
+if ('production' === getENV()) {
   // Production
   enableProdMode();
 
@@ -28,6 +28,17 @@ if ('production' === process.env.ENV) {
 
 }
 
+function getENV() {
+   try {
+      return ENV;
+   } catch (e) {
+      try {
+         return process.env['NODE_ENV'];
+      } catch (e) {
+         return 'production';
+      }
+   }
+}
 
 export const ENV_PROVIDERS = [
   ...PROVIDERS
