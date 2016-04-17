@@ -137,6 +137,7 @@ img {
 	width: 100%;
 	display: block;
 	margin: 0;
+	position: relative;
 }
 
 .header .col-md-12 {
@@ -160,7 +161,7 @@ img {
 
 .header .scroll {
 	position: absolute;
-    left: 50%;
+    left: 49%;
     bottom: 5%;
     text-align: center;
 	color: #fff;
