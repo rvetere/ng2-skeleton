@@ -11,6 +11,10 @@
 	padding: 0 0 0 0;
     letter-spacing: 1px;	
 	text-align: center;
+	
+	@media (max-width: 61.9em) {
+		font-size: 1.5em;
+	}	
 }
 
 /* -------------- about -------------- */
@@ -36,6 +40,10 @@
 
 .work-facts .col-md-12 div p {
 	margin: 0;
+	
+	@media (max-width: 61.9em) {
+		font-size: 1em;
+	}
 }
 
 .work-facts .col-md-12 div p span{
@@ -58,6 +66,10 @@
 
 .work-pictures div {
     padding: 12%;
+	
+	@media (max-width: 47.9em) {
+		padding: 6%;
+	}
 }
 
 .work-pictures .col-md-6 img {
@@ -98,6 +110,10 @@
 	display: block;
 	background-size: cover;
 	background-position: 50% 58%;
+	
+	@media (max-width: 47.9em) {
+		background-position: 30% 58%;
+	}
 }
 
 .work-recentwork div.no-gap a {
@@ -119,6 +135,11 @@
     text-align: center;
 	display: block;
 	 -webkit-background-clip: border-box;
+	 
+	@media (max-width: 61.9em) {
+		font-size: 2em;
+		padding: 160px 12% 0;
+	}
 }
 
 .work-recentwork div.no-gap a span {

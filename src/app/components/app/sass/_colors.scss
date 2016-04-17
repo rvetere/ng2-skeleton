@@ -1,5 +1,8 @@
 $brand-service:             #0379b5;
 $brand-work:            	#0379b5;
+$brand-steakhouse:          #ad2325;
+$brand-bayer:            	#1898ce;
+$brand-elefant:            	#f57b04;
 
 /* -------------- footer -------------- */
 footer {
@@ -7,7 +10,7 @@ footer {
 }
 
 /* -------------- service -------------- */
-.service .nav-header .nav-brand {
+.service .nav-header .nav-brand, .service .header .scroll {
 	color: $brand-service;
 }
 
@@ -24,7 +27,7 @@ footer {
 }
 
 /* -------------- work -------------- */
-.work .nav-header .nav-brand {
+.work .nav-header .nav-brand, .work .header .scroll {
 	color: $brand-work;
 }
 
@@ -42,16 +45,16 @@ footer {
 
 
 /* -------------- steakhouse -------------- */
-.steakhouse .nav-header .nav-brand {
-	color: #ad2325;
+.steakhouse .nav-header .nav-brand, .steakhouse .header .scroll {
+	color: $brand-steakhouse;
 }
 
 .steakhouse nav li a {
-	background-image: -webkit-linear-gradient(left, #ad2325 0%, #ad2325 50%, transparent 50%);
+	background-image: -webkit-linear-gradient(left, $brand-steakhouse 0%, $brand-steakhouse 50%, transparent 50%);
 }
 
 .steakhouse #nav-toggle:hover span, .steakhouse #nav-toggle:hover span:before, .steakhouse #nav-toggle:hover span:after {
-	background: #ad2325;
+	background: $brand-steakhouse;
 }
 
 .steakhouse .work-info, .steakhouse .work-about a, .steakhouse .work-facts, .steakhouse footer {
@@ -60,35 +63,35 @@ footer {
 
 
 /* -------------- bayer -------------- */
-.bayer .nav-header .nav-brand {
-	color: #1898ce;
+.bayer .nav-header .nav-brand, .bayer .header .scroll {
+	color: $brand-bayer;
 }
 
 .bayer  nav li a {
-	background-image: -webkit-linear-gradient(left, #1898ce 0%, #1898ce 50%, transparent 50%);
+	background-image: -webkit-linear-gradient(left, $brand-bayer 0%, $brand-bayer 50%, transparent 50%);
 }
 
 .bayer #nav-toggle:hover span, .bayer #nav-toggle:hover span:before, .bayer #nav-toggle:hover span:after {
-	background: #1898ce;
+	background: $brand-bayer;
 }
 
 .bayer .work-info, .bayer .work-about a, .bayer .work-facts, .bayer footer {
-    background-color: #1898ce;
+    background-color: $brand-bayer;
 }
 
 /* -------------- elefant -------------- */
-.elefant .nav-header .nav-brand {
-	color: #f57b04;
+.elefant .nav-header .nav-brand, .elefant .header .scroll {
+	color: $brand-elefant;
 }
 
 .elefant  nav li a {
-	background-image: -webkit-linear-gradient(left, #f57b04 0%, #f57b04 50%, transparent 50%);
+	background-image: -webkit-linear-gradient(left, $brand-elefant 0%, $brand-elefant 50%, transparent 50%);
 }
 
 .elefant #nav-toggle:hover span, .elefant #nav-toggle:hover span:before, .elefant #nav-toggle:hover span:after {
-	background: #f57b04;
+	background: $brand-elefant;
 }
 
 .elefant .work-info, .elefant .work-about a, .elefant .work-facts, .elefant footer {
-    background-color: #f57b04;
+    background-color: $brand-elefant;
 }

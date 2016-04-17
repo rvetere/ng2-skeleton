@@ -4,6 +4,7 @@
 	width: 100%;
 	display: block;
 	margin: 0 auto 12% auto;
+	position: relative;
 }
 
 /* -------------- header -------------- */
@@ -21,6 +22,14 @@
     background-position: 50% -70px;
 	display: block;
 	position: relative;
+	
+	@media (max-width: 61.9em) {
+		background-position: 40% -100px;
+	}
+	
+	@media (max-width: 33.9em) {
+		background-position: 40% -70px;
+	}	
 }
 
 /* -------------- info -------------- */
@@ -32,7 +41,11 @@
     left: 0;
     margin: 0 auto;
 	padding: 6% 90px;
-	width: 100%
+	width: 100%;
+	
+	@media (max-width: 61.9em) {
+		padding: 6% 70px;
+	}
 }
 
 .home-info .col-md-12 {
@@ -70,6 +83,10 @@
 	display: block;
 	background-size: cover;
 	background-position: 50% 58%;
+	
+	@media (max-width: 47.9em) {
+		background-position: 30% 58%;
+	}
 }
 
 .home-recentwork div.no-gap a {
@@ -91,6 +108,11 @@
     text-align: center;
 	display: block;
 	 -webkit-background-clip: border-box;
+	  
+	@media (max-width: 61.9em) {
+		font-size: 2em;
+		padding: 160px 12% 0;
+	}
 }
 
 .home-recentwork div.no-gap a span {

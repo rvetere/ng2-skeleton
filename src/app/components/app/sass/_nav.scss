@@ -201,6 +201,10 @@ nav li a {
 /* -------------- open nav -------------- */
 .nav-open nav {
   width: 360px;
+  
+	@media (max-width: 47.9em) {
+		width: 300px;
+	}
 }
 
 .nav-open nav ul{

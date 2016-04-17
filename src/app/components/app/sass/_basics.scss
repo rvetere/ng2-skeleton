@@ -48,7 +48,12 @@ h1 {
 	line-height: 1em;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
-	margin: 0 0 1em 0;	
+	margin: 0 0 1em 0;
+
+	@media (max-width: 61.9em) {
+		font-size: 3em;
+		text-align: center;
+	}
 }
 
 h2 {
@@ -78,6 +83,13 @@ h4 {
     margin: 0 0 1em 0;
     letter-spacing: 1px;	
 	text-align: center;
+	
+	@media (max-width: 61.9em) {
+		font-size: 2em;
+	}
+	@media (max-width: 33.9em) {
+		font-size: 1em;
+	}
 }
 
 p {
@@ -88,6 +100,10 @@ p {
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
+	
+	@media (max-width: 33.9em) {
+		font-size: 1em;
+	}
 }
 
 img {
@@ -130,4 +146,36 @@ img {
     background-position: 50% 50%;
 	display: block;
 	position: relative;
+	
+	@media (max-width: 61.9em) {
+		background-position: 30% 40%;
+	}
+}
+
+.work .header .col-md-12 {
+	@media (max-width: 61.9em) {
+		background-position: 50% 40%;
+	}
+}
+
+.header .scroll {
+	position: absolute;
+    left: 50%;
+    bottom: 5%;
+    text-align: center;
+	color: #fff;
+	-webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+	
+	@media (max-width: 61.9em) {
+		display: none;
+	}
+}
+
+.header .scroll i {
+	font-size: 1.6em;
+}
+
+.header .scroll:hover {
+    bottom: 4%;
 }
