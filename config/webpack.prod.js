@@ -71,7 +71,7 @@ module.exports = {
 
       'polyfills': './src/polyfills.ts',
       'vendor': './src/vendor.ts',
-      'main': './src/main.editor.browser.ts'
+      'main': './src/main.app.browser.ts'
 
    },
 
@@ -87,6 +87,9 @@ module.exports = {
 
       // Make sure root is src
       root: helpers.root('src'),
+
+      // remove other default values
+      modulesDirectories: ['node_modules']
 
    },
 
@@ -197,7 +200,22 @@ module.exports = {
          // Returns file content as string
          //
          // See: https://github.com/webpack/raw-loader
-         {test: /\.html$/, loader: 'raw-loader', exclude: [helpers.root('src/index.html')]}
+         {test: /\.html$/, loader: 'raw-loader', exclude: [helpers.root('src/index.html')]},
+
+         // Raw loader support for image files
+         // Returns file content as string
+         //
+         // See: https://github.com/webpack/raw-loader
+         {
+            test: /\.(png|jpg|jpeg|gif)/,
+            loader: 'raw-loader'
+         },
+
+         // Raw loader support for font files
+         // Returns file content as string
+         //
+         // See: https://github.com/webpack/raw-loader
+         { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' }
 
       ],
 
@@ -352,11 +370,12 @@ module.exports = {
             except: [
                'App',
                'About',
-               'Contact',
+               'Bayer',
+               'Elefant',
                'Home',
-               'Menu',
-               'Footer',
-               'XLarge',
+               'Steakhouse',
+               'Work',
+               'Service',
                'RouterActive',
                'RouterLink',
                'RouterOutlet',
@@ -408,11 +427,11 @@ module.exports = {
       // them with Content-Encoding
       //
       // See: https://github.com/webpack/compression-webpack-plugin
-      new CompressionPlugin({
-         algorithm: helpers.gzipMaxLevel,
-         regExp: /\.css$|\.html$|\.js$|\.map$/,
-         threshold: 2 * 1024
-      })
+      //new CompressionPlugin({
+      //   algorithm: helpers.gzipMaxLevel,
+      //   regExp: /\.css$|\.html$|\.js$|\.map$/,
+      //   threshold: 2 * 1024
+      //})
 
    ],
 
