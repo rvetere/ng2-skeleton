@@ -95,3 +95,27 @@ footer {
 .elefant .work-info, .elefant .work-about a, .elefant .work-facts, .elefant footer {
     background-color: $brand-elefant;
 }
+
+
+/* -------------- firefox -------------- */
+@-moz-document url-prefix() {
+	.service .work-about a:hover, .service nav li a:hover {
+		color: $brand-service;
+	}
+	
+	.work .work-about a:hover, .work nav li a:hover {
+		color: $brand-work;
+	}
+	
+	.steakhouse .work-about a:hover, .steakhouse nav li a:hover {
+		color: $brand-steakhouse;
+	}
+	
+	.bayer .work-about a:hover, .bayer nav li a:hover {
+		color: $brand-bayer;
+	}
+	
+	.elefant .work-about a:hover, .elefant nav li a:hover {
+		color: $brand-elefant;
+	}
+}

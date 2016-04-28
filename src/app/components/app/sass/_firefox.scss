@@ -1,0 +1,40 @@
+@-moz-document url-prefix() {
+    a {
+		background-color: transparent;
+		background-image: none;
+		color: #3e3e3e;		
+	}
+	
+	a:hover {
+		color: #c51e47;
+	}
+	
+	footer a {
+		background-color: transparent;
+		color: #ffffff;
+	}
+	
+	footer a:hover {
+		color: #ffffff;
+		-moz-opacity: 0.7;
+		opacity: 0.7;
+	}
+	
+	nav li a {
+		background-color: transparent;
+		background-image: none;
+	}
+	
+	.service .work-about a,
+	.work .work-about a,
+	.steakhouse .work-about a,
+	.bayer .work-about a,
+	.elefant .work-about a,
+	.work-others div a {
+		background-color: transparent;
+	}
+	
+	.work-others div a:hover {
+		color: #0379b5;
+	}
+}
