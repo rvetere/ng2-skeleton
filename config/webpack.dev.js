@@ -24,7 +24,7 @@ var autoprefixer = require('autoprefixer');
 const ENV = process.env.ENV = process.env.NODE_ENV = 'development';
 const HMR = helpers.hasProcessFlag('hot');
 const METADATA = {
-   title: 'mojito-impact',
+   title: 'sybille-hausherr.ch',
    baseUrl: '/',
    host: process.env.HOST || 'localhost',
    port: process.env.PORT || 3000,
@@ -135,7 +135,7 @@ module.exports = {
          // Tslint loader support for *.ts files
          //
          // See: https://github.com/wbuchwalter/tslint-loader
-         // { test: /\.ts$/, loader: 'tslint-loader', exclude: [ helpers.root('node_modules') ] },
+          { test: /\.ts$/, loader: 'tslint-loader', exclude: [ helpers.root('node_modules') ] },
 
          // Source map loader support for *.js files
          // Extracts SourceMaps for source files that as added as sourceMappingURL comment.
