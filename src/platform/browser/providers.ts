@@ -11,7 +11,8 @@ import {FORM_PROVIDERS} from 'angular2/common';
 // Angular 2 Http
 import {HTTP_PROVIDERS} from 'angular2/http';
 // Angular 2 Router
-import {ROUTER_PROVIDERS, LocationStrategy, HashLocationStrategy} from 'angular2/router';
+import {ROUTER_PROVIDERS} from 'angular2/router';
+import {LocationStrategy, HashLocationStrategy} from 'angular2/platform/common';
 
 // Angular 2 Material
 // import {MdRadioDispatcher} from '@angular2-material/radio/radio_dispatcher';

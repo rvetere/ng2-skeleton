@@ -1,4 +1,4 @@
-import {Injector, provide, NgZone} from 'angular2/core';
+import {ReflectiveInjector, provide, NgZone} from 'angular2/core';
 
 export class CommonsUtil {
    private static _tmplUrlPrefix: string = '';
@@ -48,7 +48,7 @@ export class CommonsUtil {
     * This is nice to inject NgZone without expanding the constructor
     */
    public static injectZone(): void {
-      let injector = Injector.resolveAndCreate([
+      let injector = ReflectiveInjector.resolveAndCreate([
          provide(NgZone, {
             useFactory: () => {
                return function () {
